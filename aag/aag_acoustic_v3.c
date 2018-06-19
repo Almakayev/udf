@@ -112,7 +112,7 @@ DEFINE_EXECUTE_AT_END(execute_at_end)
 			density[i] = C_R(cell, c_thread) / DENSITY_0;
 			
 			temp[i] = TEMPER_DL(C_T(cell, c_thread));
-			temp_acc[i] += temp[i];
+			temp_acc[i] += temp[i] * CURRENT_TIMESTEP;
 			
 			i++;
 		}
