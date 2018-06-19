@@ -24,7 +24,7 @@ int phaseCounterQuarter = 1;
 int phaseCounterOther = 1;
 int ELEMENTS_COUNT, PISTON_INDEX;
 double *x_array, *y_array, *u, *v, *pressure, *temp, *u_acc, *v_acc, *density, *temp_acc;
-double dx, dy, pMaxPiston, pMinPiston, velocityMax, tempAvgMax;
+double dx, dy, pMaxPiston = -1e+09, pMinPiston = 1e+09, velocityMax = -1e+09, tempAvgMax = -1e+09;
 
 /**
 Используется для инициализации параметров счета, массивов и сохр-ия мета-данных в файл
